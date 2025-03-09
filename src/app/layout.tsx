@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://golf-generator.vercel.app"),
+  metadataBase: new URL("https://golf.frnc.is"),
   alternates: {
     canonical: "/",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Rocketleague Golf - 3D Golf Game",
     description:
       "Hit the ball with your car in this Rocketleague-inspired golf simulator. Features realistic physics, scoring system, and beautiful 3D visuals.",
-    url: "https://golf-generator.vercel.app",
+    url: "https://golf.frnc.is",
     siteName: "Rocketleague Golf",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Rocketleague Golf - Car Racing Golf Simulator",
     description:
       "Control a car to hit a golf ball in this Rocketleague-inspired golf game with physics-based gameplay",
-    images: ["/game.png"],
+    images: ["https://golf.frnc.is/game.png"],
     creator: "@golfgenerator",
   },
   robots: {
