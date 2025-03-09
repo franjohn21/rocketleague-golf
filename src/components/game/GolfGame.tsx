@@ -14,7 +14,6 @@ import { Vector3, Vector2, Mesh, Euler } from "three";
 
 import GolfBall from "./GolfBall";
 import GolfCourse from "./GolfCourse";
-import DirectionArrow from "./DirectionArrow";
 import Car from "./Car";
 
 const GolfGame = () => {
@@ -792,7 +791,8 @@ const GolfGame = () => {
                 if (carRef.current) {
                   // @ts-ignore - we know the ref has these methods
                   const throttle = carRef.current.getThrottle
-                    ? carRef.current.getThrottle()
+                    ? // @ts-ignore
+                      carRef.current.getThrottle()
                     : 0;
                   setCarThrottle(throttle);
 
@@ -805,14 +805,6 @@ const GolfGame = () => {
                   }
                 }
               }}
-            />
-
-            {/* Direction arrow shown only in golf mode when ready */}
-            <DirectionArrow
-              power={power}
-              angle={angle}
-              position={ballPosition}
-              visible={!drivingMode && gameStatus === "ready"}
             />
           </Physics>
 
