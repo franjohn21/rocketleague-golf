@@ -1,15 +1,18 @@
-# 3D Golf Game
+# Rocketleague golf
 
-A browser-based 3D golf game built with Next.js, React, Three.js (via React Three Fiber), and Tailwind CSS.
+![Game Screenshot](public/game.png)
+
+*Vibecoded with Claude 3.7 Sonnet*
+
+A browser-based 3D Rocket League-inspired golf game built with Next.js, React, Three.js (via React Three Fiber), and Tailwind CSS.
 
 ## Features
 
-- Interactive 3D golf environment
-- Realistic ball physics using @react-three/cannon
+- Interactive 3D Rocket League-inspired golf environment
+- Physics-based gameplay
 - Responsive design with Tailwind CSS
-- Power and angle controls for golf swings
-- Multi-player scoreboard
-- Dynamic course with obstacles and terrain
+- Intuitive controls for gameplay
+- Dynamic course with obstacles
 
 ## Getting Started
 
@@ -22,8 +25,8 @@ A browser-based 3D golf game built with Next.js, React, Three.js (via React Thre
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/golf-generator.git
-cd golf-generator
+git clone https://github.com/yourusername/rocketleague-golf.git
+cd rocketleague-golf
 ```
 
 2. Install dependencies:
@@ -45,31 +48,23 @@ yarn dev
 ## Usage
 
 1. Navigate to the home page to see an overview of the game
-2. Click "Play Now" or navigate to `/game` to start playing
-3. Adjust the power and angle using the sliders or keyboard controls:
-   - Arrow keys (←/→) to adjust angle
-   - Arrow keys (↑/↓) to adjust power
-   - Spacebar to swing
-4. Aim for the hole and try to get the lowest score possible!
+2. Use the controls to interact with the game:
+   - Arrow keys to control movement
+   - Spacebar for actions
+3. Aim for the goals and enjoy the Rocket League-inspired golf gameplay!
 
 ## Project Structure
 
 ```
 /src
   /app               # Next.js app directory
-    /game            # Game page
     layout.tsx       # Root layout
     page.tsx         # Home page
-  /components
-    /layout          # Layout components (Header, Footer)
-    /game            # Game components
-      GolfGame.tsx   # Main game component
-      GolfBall.tsx   # Golf ball with physics
-      GolfCourse.tsx # Course terrain
-      ControlPanel.tsx # UI controls
-      Scoreboard.tsx   # Player scores
+  /components        # React components
+  /lib               # Utility functions and helpers
 /public
-  /textures          # Texture images
+  /game.png         # Game screenshot
+  /textures         # Texture images
 ```
 
 ## Technologies Used
@@ -87,16 +82,16 @@ yarn dev
 
 Here are some ideas for expanding the project:
 
-1. **Advanced Terrain**: Add more complex terrain with hills, sand traps, and water hazards.
-2. **Multiple Courses**: Implement different golf courses with varying difficulty.
-3. **Club Selection**: Add different club types that affect distance and trajectory.
-4. **Wind Effects**: Implement wind that affects ball physics.
-5. **Improved Graphics**: Add more detailed textures and models for the course and ball.
-6. **Animations**: Add player character model with swing animations.
-7. **Multiplayer**: Implement real-time multiplayer using WebSockets or similar technology.
-8. **Game Persistence**: Save game state to localStorage or a database.
+1. **Advanced Physics**: Enhance the physics system for more realistic gameplay.
+2. **Multiple Arenas**: Implement different arenas with varying layouts and challenges.
+3. **Power-ups**: Add Rocket League-style power-ups and boosts.
+4. **Vehicle Customization**: Add options to customize the vehicle appearance and performance.
+5. **Improved Graphics**: Add more detailed textures and models for the vehicles and arenas.
+6. **Animations**: Add more visual feedback and effects.
+7. **Multiplayer**: Implement real-time multiplayer capabilities.
+8. **Game Persistence**: Save game state and high scores.
 9. **Mobile Controls**: Optimize touch controls for mobile play.
-10. **Sound Effects**: Add sound effects for swinging, ball impacts, etc.
+10. **Sound Effects**: Add immersive sound effects for gameplay actions.
 
 ## License
 
@@ -104,6 +99,7 @@ MIT
 
 ## Acknowledgments
 
+- Rocket League for the game inspiration
 - Three.js community for resources and examples
 - Tailwind CSS for the styling framework
 - Next.js team for the amazing React framework
